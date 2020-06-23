@@ -29,7 +29,7 @@ Need to have python 3.6 installed on your machine.
    The hierarchical model ranks nursery-school applications according
    to the following concept structure:
 
-   NURSERY            Evaluation of applications for nursery schools
+   NURSERY                         Evaluation of applications for nursery schools
    . EMPLOY           Employment of parents and child's nursery
    . . parents        Parents' occupation
    . . has_nurs       Child's nursery
@@ -61,18 +61,8 @@ Need to have python 3.6 installed on your machine.
 
 6. Missing Attribute Values: none
 
-7. Class Distribution (number of instances per class)
 
-   class        N         N[%]
-   ------------------------------
-   not_recom    4320   (33.333 %)
-   recommend       2   ( 0.015 %)
-   very_recom    328   ( 2.531 %)
-   priority     4266   (32.917 %)
-   spec_prior   4044   (31.204 %)
-   
- 
- # Running the tests
+# Running the tests
 
 1.The program takes data source(nursery.csv), Minimum Support and Minimum Confidence as input.
 
@@ -81,5 +71,6 @@ Need to have python 3.6 installed on your machine.
 3.Minimum Confidence: A minimum confidence is applied to these frequent itemsets in order to form rules.
 
 4.Result: The result will show the association rules in the given dataset with the given minimum support and minimum confidence if there are any. If there are no association rules in the the set with the given support and confidence conditions, try to plug in some different (if you didn't get any results, try feeding some lower values) values of them.
+It will also generate 2 bar plots one for support of each rule , other for confidence of each rule
 
 
