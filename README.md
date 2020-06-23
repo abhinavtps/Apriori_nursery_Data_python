@@ -31,29 +31,29 @@ Need to have python 3.6 installed on your machine.
 
    NURSERY..................Evaluation of applications for nursery schools
    
-   . EMPLOY           Employment of parents and child's nursery
+   . EMPLOY.................Employment of parents and child's nursery
    
-   . . parents        Parents' occupation
+   . . parents..............Parents' occupation
    
-   . . has_nurs       Child's nursery
+   . . has_nurs.............Child's nursery
    
-   . STRUCT_FINAN     Family structure and financial standings
+   . STRUCT_FINAN...........Family structure and financial standings
    
-   . . STRUCTURE      Family structure
+   . . STRUCTURE............Family structure
    
-   . . . form         Form of the family
+   . . . form...............Form of the family
    
-   . . . children     Number of children
+   . . . children...........Number of children
    
-   . . housing        Housing conditions
+   . . housing..............Housing conditions
    
-   . . finance        Financial standing of the family
+   . . finance...............Financial standing of the family
    
-   . SOC_HEALTH       Social and health picture of the family
+   . SOC_HEALTH..............Social and health picture of the family
    
-   . . social         Social conditions
+   . . social.................Social conditions
    
-   . . health         Health conditions
+   . . health.................Health conditions
 
 3. Number of Instances: 12960
    (instances completely cover the attribute space)
