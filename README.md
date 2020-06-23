@@ -29,7 +29,7 @@ Need to have python 3.6 installed on your machine.
    The hierarchical model ranks nursery-school applications according
    to the following concept structure:
 
-   NURSERY            Evaluation of applications for nursery schools
+   NURSERY..................Evaluation of applications for nursery schools
    
    . EMPLOY           Employment of parents and child's nursery
    
