@@ -57,24 +57,18 @@ class TransactionManager(object):
         return float(len(sum_indexes)) / self.__num_transaction
 
     def initial_candidates(self):
-       
-        
-        
         return [frozenset([item]) for item in self.items]
 
     @property
     def num_transaction(self):
-       
         return self.__num_transaction
 
     @property
     def items(self):
-        
         return sorted(self.__items)
 
     @staticmethod
     def create(transactions):
-        
         if isinstance(transactions, TransactionManager):
             return transactions
         return TransactionManager(transactions)
@@ -91,19 +85,15 @@ OrderedStatistic = namedtuple( # pylint: disable=C0103
 
 
 def create_next_candidates(prev_candidates, length):
-    
     # Sort the items.
     items = sorted(frozenset(chain.from_iterable(prev_candidates)))
-
     # Create the temporary candidates. These will be filtered below.
     # Creating all combintions of items of length 'length'
     tmp_next_candidates = (frozenset(x) for x in combinations(items, length))
-
     # Return all the candidates if the length of the next candidates is 2
     # because their subsets are the same as items.
     if length < 3:
         return list(tmp_next_candidates)
-    
     
     #If a 1-item itemset is infrequent then no need to consider that in next itemset
     # Filter candidates that all of their subsets are
@@ -115,12 +105,10 @@ def create_next_candidates(prev_candidates, length):
     return next_candidates
 
 
+
 def gen_support_records(transaction_manager, min_support, **kwargs):
-    
     # Parse arguments.
     max_length = kwargs.get('max_length')
-  
-   
     # Process.
     candidates = transaction_manager.initial_candidates() #returns a list of frozensets containing
     length = 1                                            #one item each
@@ -155,8 +143,6 @@ def gen_ordered_statistics(transaction_manager, record):
 
 
 def filter_ordered_statistics(ordered_statistics, **kwargs):
-    
-
     min_confidence = kwargs.get('min_confidence', 0.0)
     min_lift = kwargs.get('min_lift', 0.0)
 
@@ -193,6 +179,7 @@ def apriori(transactions, **kwargs):
         if not ordered_statistics:
             continue
         yield RelationRecord(support_record.items, support_record.support, ordered_statistics)
+
 
 
 # 1. Reading the data from nursery.csv file
