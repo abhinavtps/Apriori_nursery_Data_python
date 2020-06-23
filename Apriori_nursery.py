@@ -219,7 +219,7 @@ for item in M:
         r.append(x[2])
         base.append("--------->")
         base.extend(add)
-        #print(base)
+        print(base)
 # 5. Isolating the rules which have decendant as class label
 base=[]
 nparray = np.array(r)
