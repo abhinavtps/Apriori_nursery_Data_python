@@ -75,8 +75,11 @@ Need to have python 3.6 installed on your machine.
  # Running the tests
 
 1.The program takes data source(nursery.csv), Minimum Support and Minimum Confidence as input.
+
 2.Minimum Support: A minimum support is applied to find all frequent itemsets in a database.
+
 3.Minimum Confidence: A minimum confidence is applied to these frequent itemsets in order to form rules.
+
 4.Result: The result will show the association rules in the given dataset with the given minimum support and minimum confidence if there are any. If there are no association rules in the the set with the given support and confidence conditions, try to plug in some different (if you didn't get any results, try feeding some lower values) values of them.
 
 
